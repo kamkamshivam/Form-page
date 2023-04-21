@@ -1,38 +1,113 @@
+body,
 .App {
-  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+  background-color:#fff
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation{
+  width: 100%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.links{
+  margin-right: 30px;
+  text-decoration: none;
+  color: rgb(211, 62, 62);
+  }
+nav a.active{
+  color: rgb(20, 220, 80);
+}
+.contacts-heading{
+  font-size: 20px;
+  width: 200px;
+  
+}
+tr{
+  height: 30px;
+}
+button{
+  margin-top: 15px;
+  float: right;
+}
+.home-heading{
+  font-size: 25px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contacts-heading-display{
+  font-size: 19px;
+  width: 70px;
+}
+.contacts-content-display{
+  font-size: 15px;
+  width: 220px;
+}
+.home-contacts {
+  padding: 10px;
+  cursor: pointer;
+  
+}
+.home-contacts:hover {
+  background: #ddd;
+}
+.home-contacts.active{
+  background: #0088cc;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.empty-list{
+  font-size: 19px;
+  padding-left: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-edit-heading{
+  width: 100px;
+}
+.table-edit{
+  padding: 10px;
+}
+.delete-button{
+  margin-top: 15px;
+  float: left;
+}
+button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  color: #0088cc;
+}
+button:hover {
+  color: #04c;
+}
+.error-text{
+  color:red;
+  padding-left: 20px;
+}
+.addContacts-main {
+  display: flex;
+  justify-content: center;
+}
+.savebtn{
+  background-color: rgb(190, 251, 195);
+  width: 5em;
+  height: 2em;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.savebtn:hover{
+  background-color: aquamarine;
+}
+.editE{
+  border-radius: 5px;
 }
