@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   },[contacts]);
+  
   const [activeContact, setActiveContact] = useState([false]);
   const onAddContact = (iname, iphone, iemail, iage, ipass) => {
     const newContact = {
